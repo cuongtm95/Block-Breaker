@@ -1,25 +1,32 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Block : MonoBehaviour {
 
     [SerializeField] AudioClip breakSound;
+    [SerializeField] GameObject blockVFX;
+    [SerializeField] int blockHps;
+    [SerializeField] Sprite[] hitSprites;
 
     //cached reference
     Level level;
-    GameStatus gamestatus;
+    GameSession gamestatus;
+
+    int hits;
 
     private void Start()
     {
         level = FindObjectOfType<Level>();
-        gamestatus = FindObjectOfType<GameStatus>();
+        gamestatus = FindObjectOfType<GameSession>();
         level.CountBreakableBlocks();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        DestroyBlocks();
+        countHits();
+        triggerBlockVFX();
         gamestatus.countScore();
     }
 
@@ -28,5 +35,29 @@ public class Block : MonoBehaviour {
         AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position);
         Destroy(gameObject, 0.0f);
         level.BlockDestroyed();
+    }
+
+    private void triggerBlockVFX()
+    {
+        GameObject blockvfx = Instantiate(blockVFX, transform.position, transform.rotation);
+    }
+
+    private void countHits()
+    {
+        hits++;
+        if(hits >= blockHps)
+        {
+            DestroyBlocks();
+        }
+        else
+        {
+            DisplayNextSprites();
+        }
+    }
+
+    private void DisplayNextSprites()
+    {
+        int spriteIndex = hits - 1;
+        GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
     }
 }

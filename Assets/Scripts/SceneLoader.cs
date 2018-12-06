@@ -19,7 +19,7 @@ public class SceneLoader : MonoBehaviour {
     public void playAgain()
     {
         SceneManager.LoadScene(0);
-        FindObjectOfType<GameStatus>().resetGame();
+        FindObjectOfType<GameSession>().resetGame();
         
     }
 
