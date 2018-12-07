@@ -23,4 +23,21 @@ public class SceneLoader : MonoBehaviour {
         
     }
 
+
+    public Animator transitionAnim;
+
+    public void triggerTransition()
+    {
+        StartCoroutine(LoadScene());
+    }
+
+    IEnumerator LoadScene()
+    {
+        transitionAnim.SetTrigger("end");
+        yield return new WaitForSeconds(1f);
+        LoadNextScence();
+    }
+
+
+
 }

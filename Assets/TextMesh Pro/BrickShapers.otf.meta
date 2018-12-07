@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: af3c5a7dbcebe044ab271e10257ba0a6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: BrickShapers
+  fontNames:
+  - BrickShapers
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0c24e1e3da269c84fb773afe94a05156, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -51,3 +51,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2afb745d8e2b0d549bd7d48f2bdb8730, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionAnim: {fileID: 0}

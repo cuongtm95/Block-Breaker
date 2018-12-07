@@ -24,7 +24,7 @@ public class Level : MonoBehaviour {
         breakableBlocks--;
         if(breakableBlocks <= 0)
         {
-            sceneloader.LoadNextScence();
+            sceneloader.triggerTransition();
         }
     }
 }
