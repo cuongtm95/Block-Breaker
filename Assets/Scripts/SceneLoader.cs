@@ -19,11 +19,9 @@ public class SceneLoader : MonoBehaviour {
     public void playAgain()
     {
         SceneManager.LoadScene(0);
-        FindObjectOfType<GameSession>().resetGame();
-        
     }
 
-
+    // Transition scene
     public Animator transitionAnim;
 
     public void triggerTransition()
