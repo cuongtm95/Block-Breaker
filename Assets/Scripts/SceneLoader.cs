@@ -11,6 +11,11 @@ public class SceneLoader : MonoBehaviour {
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
+    public void credit()
+    {
+        SceneManager.LoadScene(6);
+    }
+
     public void quit()
     {
         Application.Quit();

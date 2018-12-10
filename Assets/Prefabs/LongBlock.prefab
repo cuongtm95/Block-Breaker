@@ -80,6 +80,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: da39a1a5a95b4654781ebe80dfd3e4e2, type: 3}
   blockVFX: {fileID: 1995403933065894, guid: 4961a16ba01e09547be3e1c9d16d5ad0, type: 2}
+  blockHps: 0
+  hitSprites: []
 --- !u!212 &212731119069692260
 SpriteRenderer:
   m_ObjectHideFlags: 1

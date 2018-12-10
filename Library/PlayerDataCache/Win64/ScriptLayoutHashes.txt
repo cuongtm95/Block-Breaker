@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/richm/Desktop/Brick Breaker 9000/Block Breaker.exe
+C:/Users/richm/Desktop/BB9000/Brick Breaker 9000.exe
 SceneListBegin?
 Assets/Scenes/Start Menu.unity
 Assets/Scenes/Level 1.unity
@@ -8,6 +8,7 @@ Assets/Scenes/Level 2.unity
 Assets/Scenes/Level 3.unity
 Assets/Scenes/Winning Scene.unity
 Assets/Scenes/Game Over.unity
+Assets/Scenes/Credits.unity
 SceneListEnd?
 60442564730c384116fbe14388b6f403 Assembly-CSharp.dll:.CFX_LightFlicker
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
